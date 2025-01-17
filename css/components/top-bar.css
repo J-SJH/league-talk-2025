@@ -1,0 +1,25 @@
+.top-bar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px 3px;
+    justify-content: space-between;
+}
+
+.top-bar__icon {
+    display: flex;
+}
+
+.top-bar__icon span {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top-bar__icon i {
+    display: flex;
+    align-items: center;
+    margin: 0px 3px;
+}

@@ -8,17 +8,17 @@
     justify-content: space-between;
 }
 
-.top-bar__icon {
+.top-bar__column {
     display: flex;
 }
 
-.top-bar__icon span {
+.top-bar__column span {
     display: flex;
     font-size: 16px;
     font-weight: 600;
 }
 
-.top-bar__icon i {
+.top-bar__column i {
     display: flex;
     align-items: center;
     margin: 0px 3px;

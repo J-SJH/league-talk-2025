@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="top-bar">
-        <div class="top-bar__icon">
+        <div class="top-bar__column">
             <span>No Service</span>
             <i class="fa-solid fa-wifi fa-xs"></i>
         </div>
-        <div class="top-bar__icon">
+        <div class="top-bar__column">
             <span>13:25</span>
         </div>
-        <div class="top-bar__icon">
+        <div class="top-bar__column">
             <span>-92%</span>
             <i class="fa-solid fa-battery-full fa-xl"></i>
             <i class="fa-solid fa-bolt-lightning fa-sm"></i>
@@ -24,17 +24,20 @@
 
     <header class="login-screen">
         <div class="login-screen__header">
-            <h1>Welcome to League Talk</h1>
-            <h4>If you have a League Account, log in with your email or phone number.</h4>
+            <h1 class="login-screen__header-title">Welcome to League Talk</h1>
+            <img src="photos/upper-l-logo.png" class="login-screen__header-img">
+            <h4 class="login-screen__header-describe">If you have a League Account,</h4>
+            <h4 class="login-screen__header-describe">log in with your email or phone number.</h4>
         </div>
     </header>
 
-    <main class="login-screen__input">
-        <input required type="text" placeholder="Email or phone number">
-        <input required type="password" placeholder="Password">
-        <input type="submit" value="Log In">
-        <input type="submit" Value="Sign Up">
-        <a class="login-screen__find-account" href="#"><span>Find League Account or Password</span></a>
+        <form action="friends.html" method="get" class="login-form">
+            <input required type="text" placeholder="Email or phone number">
+            <input required type="password" placeholder="Password">
+            <input type="submit" value="Log In">
+            <input type="submit" Value="Sign Up">
+        </form>
+        <a class="login-form__find-account" href="#"><span>Find League Account or Password</span></a>
     </main>
     
     <script src="https://kit.fontawesome.com/4d331c22b9.js" crossorigin="anonymous">    

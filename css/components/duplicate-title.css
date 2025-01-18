@@ -1,0 +1,28 @@
+.duplicate-title {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.duplicate-title__detail {
+    width: 50%;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.duplicate-title__detail-icons {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: var(--space);
+    font-size: 25px;
+}
+
+.duplicate-title__detail-icon:first-child{
+    margin-right: var(--space);
+}
+
+.duplicate-title__detail-icon:last-child {
+    margin-left: var(--space);
+}

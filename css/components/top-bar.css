@@ -1,15 +1,25 @@
 .top-bar {
+    position: fixed;
     top: 0px;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     padding: 5px 3px;
-    justify-content: space-between;
 }
 
 .top-bar__column {
     display: flex;
+    width: 33%;
+}
+
+.top-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
 }
 
 .top-bar__column span {

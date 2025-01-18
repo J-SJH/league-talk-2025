@@ -5,6 +5,7 @@
 /* components */
 @import "components/top-bar.css";
 @import "components/duplicate-title.css";
+@import "components/nav.css";
 
 /* screens */
 @import "screens/login.css";

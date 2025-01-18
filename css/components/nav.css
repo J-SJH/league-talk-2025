@@ -1,11 +1,22 @@
 .nav {
+    position: fixed;
     background-color: #F9F9FA;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav-list {
     display: flex;
-    bottom: 0;
+    justify-content: space-between;
+}
+
+.nav-list__icon {
+    font-size: 25px;
+}
+
+.nav-list__btn a {
+    color: inherit;
 }

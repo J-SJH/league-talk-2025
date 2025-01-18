@@ -1,7 +1,7 @@
 .duplicate-title {
     display: flex;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .duplicate-title__detail {
@@ -25,4 +25,8 @@
 
 .duplicate-title__detail-icon:last-child {
     margin-left: var(--space);
+}
+
+.duplicate-title__detail-icon a {
+    color: inherit;
 }

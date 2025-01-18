@@ -1,0 +1,20 @@
+.friends-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    padding: 15px 0px;
+    margin-top: 20px;
+}
+
+.friends-info i {
+    color: var(--gray);
+}
+
+.friends-info i:first-child {
+    margin-right: 7px;
+}
+
+.friends-info i:last-child {
+    margin-left: 7px;
+}

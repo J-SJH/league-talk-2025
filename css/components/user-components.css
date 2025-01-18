@@ -1,0 +1,11 @@
+.user-components {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.user-components__user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}

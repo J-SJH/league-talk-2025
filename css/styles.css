@@ -6,11 +6,13 @@
 @import "components/top-bar.css";
 @import "components/duplicate-title.css";
 @import "components/nav.css";
+@import "components/user-components.css";
 
 /* screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
     color: #2f363e;
-    font-family: "Open Sans", serif;
+    font-family: Arial, Helvetica, sans-serif, serif;
 }

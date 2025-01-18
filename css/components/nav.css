@@ -20,3 +20,29 @@
 .nav-list__btn a {
     color: inherit;
 }
+
+.nav-list__btn {
+    position: relative;
+}
+
+.nav-list__notification {
+    position: absolute;
+    background-color: var(--blue);
+    color: white;
+    font-size: 17px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    top: -5px;
+    left: 17px;
+}
+
+.nav-list__alarm {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    top: -5px;
+}

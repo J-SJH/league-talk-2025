@@ -64,7 +64,17 @@
 
 .user-components__channel-info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-right: var(--space);
+}
+
+.user-components__channel-info-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-components__channel-name {
+    font-weight: 600;
+    font-size: 20px;
 }

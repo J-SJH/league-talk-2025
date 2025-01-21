@@ -15,16 +15,11 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    margin-right: var(--space);
     font-size: 25px;
 }
 
-.duplicate-title__detail-icon:first-child{
-    margin-right: var(--space);
-}
-
-.duplicate-title__detail-icon:last-child {
-    margin-left: var(--space);
+.duplicate-title__detail-icons i {
+    margin-right:var(--space);
 }
 
 .duplicate-title__detail-icon a {

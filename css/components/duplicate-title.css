@@ -25,3 +25,18 @@
 .duplicate-title__detail-icon a {
     color: inherit;
 }
+
+.duplicate-title__gear {
+    position: relative;
+}
+
+.duplicate-title__detail-icon span {
+    display: flex;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    right: 20px;
+    top: -5px;
+}

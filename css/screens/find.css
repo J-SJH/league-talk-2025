@@ -117,9 +117,31 @@
     margin-top: 7px;
 }
 
+.find-screen__open-chat-img {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
 .find-screen__open-chat-img img {
     width: 100px;
     height: 100px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.09);
     border-radius: 15%;
+}
+
+.find-screen__open-chat-like-count {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 35%;
+    font-size: 12px;
+    padding: 6px 6px;
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+}
+
+.find-screen__open-chat-like-count i {
+    margin-right: 2px;
+    font-size: 10px;
 }

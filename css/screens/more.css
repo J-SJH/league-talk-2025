@@ -41,3 +41,34 @@
     align-items: center;
     top: 100px;
 }
+
+.more-screen__suggestions-title {
+    border-top: var(--border);
+    margin-top: 45px;
+    padding-top: var(--space);
+    font-size: 18px;
+}
+
+.more-screen__suggestions-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.more-screen__suggestions-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px var(--space);
+    margin-top: var(--space);
+}
+
+.more-screen__suggestions-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    margin-bottom: 15px;
+}
+
+.more-screen__suggestions-icon span {
+    color: rgba(0, 0, 0, 0.5);
+}

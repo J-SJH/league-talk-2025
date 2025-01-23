@@ -1,0 +1,43 @@
+.more-screen__first {
+    justify-content: space-between;
+}
+
+.more-screen__second {
+    
+}
+
+.more-screen__first,
+.more-screen__second {
+    display: flex;
+    margin-top: 40px;
+    margin-left: var(--space);
+    margin-right: var(--space);
+}
+
+.more-screen__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-screen__list i {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.more-screen__list span {
+    display: flex;
+}
+
+.more-screen__icons:nth-child(2) {
+    position: relative;
+}
+
+.more-screen__icons-second-row {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+}

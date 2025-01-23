@@ -76,6 +76,11 @@
     margin-top: 5px;
 }
 
+.user-components__user-text-info {
+    display: flex;
+    align-items: center;
+}
+
 .user-components__user-text h4 {
     font-weight: 600;
     font-size: 20px;
@@ -85,6 +90,21 @@
 .user-components__user-text h6 {
     margin-top: 15px;
     opacity: 0.7;
+}
+
+.user-components__user-text span {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 1px solid var(--light-blue);
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-blue);
 }
 
 .user-components__channel {
@@ -117,4 +137,10 @@
 .user-components__channel-name {
     font-weight: 600;
     font-size: 20px;
+}
+
+.user-components__user-more {
+    display: flex;
+    font-size: 35px;
+    margin: 20px var(--space) 0px 0px;
 }

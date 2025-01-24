@@ -1,0 +1,80 @@
+.chat-screen {
+    background-color: #5ba565;
+    height: 5000vh;
+}
+
+.chat__title {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px var(--space);
+    padding-top: 50px;
+    width: 90%;
+    background-color: #5ba565;
+}
+
+.chat__title-column {
+    font-size: 30px;
+}
+
+.chat__title-column a {
+    color: inherit;
+}
+
+.chat__title-column:first-child {
+    margin-right: auto;
+}
+
+.chat__title-column:nth-child(2) {
+    text-align: center;
+    padding-left: 80px;
+}
+
+.chat__title-column:last-child {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.chat__title-column:last-child i {
+    padding-left: 15px;
+}
+
+.chat__time {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.chat__time span {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.chat__since {
+    display: flex;
+    margin-left: var(--space);
+}
+
+.chat__since-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.chat__since-name {
+    margin-left: 5px;
+}
+
+.chat__since-text {
+    display: flex;
+}
+
+.chat__since-text h4 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+}

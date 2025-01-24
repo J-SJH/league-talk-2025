@@ -1,0 +1,21 @@
+.settings-screen__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px var(--space);
+    margin-top: 50px;
+}
+
+.settings-screen__title-text {
+    font-weight: 600;
+}
+
+.settings-screen__title-back a{
+    color: inherit;
+}
+
+.settings-screen__title-text,
+.settings-screen__title-more,
+.settings-screen__title-back {
+    font-size: 30px;
+}

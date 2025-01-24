@@ -4,6 +4,7 @@
     justify-content: space-between;
     margin: 0px var(--space);
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 .settings-screen__title-text {
@@ -18,4 +19,79 @@
 .settings-screen__title-more,
 .settings-screen__title-back {
     font-size: 30px;
+}
+
+.settings-screen__version-info {
+    border-bottom: var(--border);
+}
+
+.settings-screen__version-info,
+.settings-screen__options {
+    display: flex;
+    flex-direction: column;
+    margin: 0px var(--space);
+}
+
+.settings-screen__version-info span,
+.settings-screen__options span {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.settings-screen__version-list,
+.settings-screen__options-list {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.settings-screen__options-list {
+    margin-top: 2px;
+    padding-bottom: 15px;
+}
+
+.settings-screen__version-list h4 {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.settings-screen__version-list:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-screen__version-list:first-child {
+    position: relative;
+}
+
+.settings-screen__notices-notification {
+    position: absolute;
+    left: 120px;
+}
+
+.settings-screen__options-list:nth-child(3) {
+    position: relative;
+}
+
+.settings-screen__friends-notification {
+    position: absolute;
+    left: 130px;
+}
+
+.settings-screen__notices-notification, 
+.settings-screen__friends-notification {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
 }

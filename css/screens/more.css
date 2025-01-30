@@ -2,10 +2,6 @@
     justify-content: space-between;
 }
 
-.more-screen__second {
-    
-}
-
 .more-screen__first,
 .more-screen__second {
     display: flex;

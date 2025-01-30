@@ -56,6 +56,16 @@
 .chat__since {
     display: flex;
     margin-left: var(--space);
+    margin-bottom: 15px;
+}
+
+.chat__to {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: var(--space);
+    margin-bottom: 15px;
 }
 
 .chat__since-img img{
@@ -70,21 +80,95 @@
 
 .chat__since-text {
     display: flex;
-    position: relative;
 }
 
-.chat__since-text h4 {
+.chat__since-text h4,
+.chat__to-text h4 {
     font-size: 15px;
     font-weight: 600;
     background-color: white;
     padding: 15px;
     border-radius: 25px;
-    border-top-left-radius: 0;
     margin-top: 10px;
 }
 
-.chat__since-time {
+.chat__since-text h4 {
+    border-top-left-radius: 0;
+}
+
+.chat__to-text h4 {
+    border-top-right-radius: 0;
+}
+
+.chat__since-time,
+.chat__to-time {
     font-size: 12px;
     margin-top: 40px;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chat__text-box {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.chat__text-box-plus {
+    margin-left: var(--space);
+    width: 10%;
+}
+
+.chat__text-box-plus i,
+.chat__text-box-chatbox i {
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.chat__text-box-chatbox {
+    margin-right: var(--space);
+    display: flex;
+    width: 90%;
+    position: relative;
+}
+
+.chat__text-box-chatbox input {
+    font-size: 18px;
+    margin: 6px 0px;
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.chat__text-box-chatbox > i,
+.chat__text-box-chatbox button {
+    position: absolute;
+}
+
+.chat__text-box-chatbox > i {
+    right: 50px;
+    bottom: 15px;
+}
+
+.chat__text-box-chatbox button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5px;
+    bottom: 10px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.chat__text-box-chatbox button i {
+    opacity: 1;
 }

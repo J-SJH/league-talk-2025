@@ -19,7 +19,9 @@
 }
 
 .chat__title-column a {
+    position: relative;
     color: inherit;
+    z-index: 0;
 }
 
 .chat__title-column:first-child {
@@ -40,10 +42,23 @@
     padding-left: 15px;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .chat__time {
+    position: relative;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 30px;
+    animation: appear 0.5s linear forwards;
+    z-index: -100;
 }
 
 .chat__time span {
@@ -53,10 +68,32 @@
     border-radius: 40px;
 }
 
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .chat__since {
     display: flex;
     margin-left: var(--space);
     margin-bottom: 15px;
+    animation: fadeInFromLeft 0.5s linear forwards;
+    transform: translateX(-100px);
+}
+
+@keyframes fadeInFromRight {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .chat__to {
@@ -66,6 +103,8 @@
     align-items: center;
     margin-right: var(--space);
     margin-bottom: 15px;
+    transform: translateX(100px);
+    animation: fadeInFromRight 0.5s linear forwards;
 }
 
 .chat__since-img img{
@@ -126,6 +165,11 @@
 .chat__text-box-chatbox i {
     font-size: 25px;
     opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes inputAnimation {
+
 }
 
 .chat__text-box-chatbox {
@@ -171,4 +215,17 @@
 
 .chat__text-box-chatbox button i {
     opacity: 1;
+}
+
+.chat__text-box .chat__text-box-plus,
+.chat__text-box .fa-face-smile {
+    transition: opacity 1s ease-in-out;
+}
+
+.chat__text-box-chatbox:focus-within input {
+    transform: translateY(-60px) translateX(-5%);
+}
+
+.chat__text-box:focus-within {
+    transform: translateY(60px);
 }

@@ -13,8 +13,20 @@
     justify-content: space-between;
 }
 
+@keyframes btnAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .nav-list__icon {
+    transform: translateY(50px);
     font-size: 25px;
+    animation: btnAnimation 0.2s linear forwards;
 }
 
 .nav-list__btn a {
@@ -45,4 +57,16 @@
     background-color: var(--blue);
     border-radius: 50%;
     top: -5px;
+}
+
+.nav-list__icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav-list__icon:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.nav-list__icon:last-child {
+    animation-delay: 0.6s;
 }

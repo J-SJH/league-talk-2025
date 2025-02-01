@@ -1,3 +1,8 @@
+.friends-screen {
+    position: scroll;
+    height: 100vh;
+}
+
 .friends-info {
     display: flex;
     align-items: center;

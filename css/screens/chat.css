@@ -154,6 +154,7 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 .chat__text-box-plus {
@@ -166,10 +167,6 @@
     font-size: 25px;
     opacity: 0.5;
     cursor: pointer;
-}
-
-@keyframes inputAnimation {
-
 }
 
 .chat__text-box-chatbox {
@@ -187,6 +184,7 @@
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 30px;
     padding: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .chat__text-box-chatbox > i,
@@ -217,13 +215,26 @@
     opacity: 1;
 }
 
-.chat__text-box .chat__text-box-plus,
-.chat__text-box .fa-face-smile {
-    transition: opacity 1s ease-in-out;
+.chat__text-box button:focus,
+.chat__text-box button:active {
+    outline: none;
 }
 
-.chat__text-box-chatbox:focus-within input {
-    transform: translateY(-60px) translateX(-5%);
+.chat__text-box .chat__text-box-plus,
+.chat__text-box .fa-face-smile,
+.chat__text-box button {
+    transition: all 0.4s ease-in-out;
+}
+
+.chat__text-box:focus-within .chat__text-box-plus,
+.chat__text-box:focus-within .fa-face-smile,
+.chat__text-box:focus-within button {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.chat__text-box:focus-within input {
+    transform: translateX(-5%) translateY(-60px);
 }
 
 .chat__text-box:focus-within {

@@ -40,3 +40,16 @@
     right: 20px;
     top: -5px;
 }
+
+@keyframes rollingGear {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.duplicate-title__detail-icon .fa-gear:hover {
+    animation: rollingGear 2s linear infinite;
+}

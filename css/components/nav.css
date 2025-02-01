@@ -37,6 +37,18 @@
     position: relative;
 }
 
+@keyframes messageNotification {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateX(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .nav-list__notification {
     position: absolute;
     background-color: var(--blue);
@@ -48,6 +60,7 @@
     border-radius: 50%;
     top: -5px;
     left: 17px;
+    animation: messageNotification 1.5s ease-in-out infinite;
 }
 
 .nav-list__alarm {
